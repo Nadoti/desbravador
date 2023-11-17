@@ -13,11 +13,13 @@ export function Header() {
     const user = await getUser(username)
     if(user.status !== 200 ) {
       notification({type: errorNotification, message: "Usuário não encontrado!"})
+      setUsername("")
       return;
     }
     const repositories = await getUserRepository(username)
     sortRepositories(false, repositories.data)
     setDataUserDetails(user.data)
+    setUsername("")
   }
 
   return (
