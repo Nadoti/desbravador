@@ -27,9 +27,15 @@ export function Repository() {
   }, [])
 
   return (
-    <main className="w-full h-screen flex items-center justify-center">
+    <main className="w-full h-screen flex items-center justify-center px-2">
       <div className="w-full max-w-lg flex flex-col gap-4 py-5 px-6 shadow-xl">
-        <h1 className="text-2xl">Projeto: <span className="text-3xl font-bold text-green-700">{dataRepository?.full_name}</span></h1>
+      <Link
+          className="w-fit text-gray-400 border border-gray-300 p-3 rounded-full"
+          to="/"
+        >
+          {"<- voltar"}
+        </Link>
+        <h1 className="text-2xl">Projeto: <span className="text-2xl font-bold text-green-700 sm:text-3xl">{dataRepository?.full_name}</span></h1>
         <p className="font-bold text-gray-600">Nome: <span className="text-sm font-normal">{dataRepository?.name}</span></p>
         <p className="font-bold text-gray-600">Descrição: <span className="text-sm font-normal">{dataRepository?.description}</span></p>
         <p className="font-bold text-gray-600">Estrelas: <span className="text-sm font-normal">{dataRepository?.stargazers_count}</span></p>

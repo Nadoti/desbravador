@@ -5,7 +5,7 @@ import avatar from "../assets/avatar.png"
 export function User() {
   const { dataUserDetails } = useDataUserContext()
   return (
-    <section className="w-full max-w-xs shadow-2xl rounded-xl">
+    <section className="w-full max-w-xs shadow-2xl rounded-xl mx-auto">
       <div className="w-full flex items-center justify-center ">
         <img 
           className="w-64 rounded-full relative -top-10"
