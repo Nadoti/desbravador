@@ -2,9 +2,7 @@
 
 Para acessar o projeto, faça um clone do repositorio no vscode, quando o repositorio estiver baixado, inicie com pnpm install.
 
-no arquivo api.ts dentro da pasta services, implemente seu token do github seguindo esse tutorial -[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens], pois sem o token, o github da apenas um pequeno número de acesso pela API.
-
-Quando estiver acabado de instalar as dependências e colocado o token, inicie com pnpm dev.
+Quando estiver acabado de instalar as dependências, inicie com pnpm dev.
 
 <img src="/src/assets/avatar.png" alt="Texto Alternativo">
 
